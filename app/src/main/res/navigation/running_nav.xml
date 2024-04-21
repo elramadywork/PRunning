@@ -5,6 +5,12 @@
     android:id="@+id/running_nav"
     app:startDestination="@id/setupFragment">
 
+    <action
+        android:id="@+id/action_global_trackingFrafgment"
+        app:destination="@id/trackingFragment"
+        app:launchSingleTop="true"
+        />
+
     <fragment
         android:id="@+id/runFragment"
         android:name="com.example.reactiveapp.ui.fragments.RunFragment"
