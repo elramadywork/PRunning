@@ -15,9 +15,6 @@ object NotificationsPermission {
 
     private lateinit var requestPermissionLauncher: ActivityResultLauncher<String>
 
-
-
-
     fun requestPermission(context: AppCompatActivity, binding: View): ActivityResultLauncher<String> {
         this.requestPermissionLauncher = context.registerForActivityResult(
             ActivityResultContracts.RequestPermission()

@@ -38,25 +38,9 @@ class RunFragment : Fragment(), EasyPermissions.PermissionCallbacks {
     private val Tag: String="CasePermission"
     private val mainViewModel:MainViewModel by viewModels()
      lateinit var binding:FragmentRunBinding
-    private lateinit var requestPermissionLauncher: ActivityResultLauncher<String>
-
-//    private val backgroundLocationPermissionLauncher =
-//        requireActivity().registerForActivityResult(ActivityResultContracts.RequestPermission()) { isGranted ->
-//            if (isGranted) {
-//                // Background location permission granted, proceed with location-related tasks
-//            } else {
-//                // Background location permission denied, handle accordingly
-//            }
-//        }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-//        lifecycleScope.launch(Dispatchers.Default) {
-//            requestPermissions()
-//
-//        }
-   //     requestPermissions()
-
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -66,7 +50,6 @@ class RunFragment : Fragment(), EasyPermissions.PermissionCallbacks {
     override fun onStart() {
         super.onStart()
         requestPermissions()
-
     }
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -107,13 +90,13 @@ class RunFragment : Fragment(), EasyPermissions.PermissionCallbacks {
             val perms = arrayOf(
                 Manifest.permission.ACCESS_FINE_LOCATION,
                 Manifest.permission.ACCESS_COARSE_LOCATION,
-          //      Manifest.permission.ACCESS_BACKGROUND_LOCATION,
+               Manifest.permission.ACCESS_BACKGROUND_LOCATION,
                 )
            EasyPermissions.requestPermissions(
                 this,
                 "You need to accept location permissions to use this app.",
                  REQUEST_CODE_LOCATION_PERMISSION,
-               *perms.sliceArray(0 until 2)
+               *perms
 
                )
 
