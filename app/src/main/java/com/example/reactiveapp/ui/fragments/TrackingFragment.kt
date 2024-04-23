@@ -15,6 +15,7 @@ import com.example.reactiveapp.common.Constants.ACTION_START_OR_RESUME_SERVICE
 import com.example.reactiveapp.common.Constants.MAP_ZOOM
 import com.example.reactiveapp.common.Constants.POLYLINE_COLOR
 import com.example.reactiveapp.common.Constants.POLYLINE_WIDTH
+import com.example.reactiveapp.common.TrackingUtility
 import com.example.reactiveapp.databinding.FragmentTrackingBinding
 import com.example.reactiveapp.services.Polyline
 import com.example.reactiveapp.services.TrackingService
@@ -34,6 +35,9 @@ class TrackingFragment : Fragment() {
 
     private var isTracking=false
     private var pathPoints= mutableListOf<Polyline>()
+
+    private var curTimeInMillis = 0L
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -81,6 +85,13 @@ class TrackingFragment : Fragment() {
             addLatestPolyline()
             moveCameraToUser()
         })
+
+
+        TrackingService.timeRunInMillis.observe(viewLifecycleOwner, Observer {
+            curTimeInMillis = it
+            val formattedTime = TrackingUtility.getFormattedStopWatchTime(curTimeInMillis, true)
+            binding.tvTimer.text = formattedTime
+        })
     }
 
 
@@ -121,13 +132,16 @@ class TrackingFragment : Fragment() {
             val polylineOptions = PolylineOptions()
                 .color(POLYLINE_COLOR)
                 .width(POLYLINE_WIDTH)
+                .visible(true)
                 .addAll(polyline)
             map?.addPolyline(polylineOptions)
+
+
         }
     }
 
     private fun addLatestPolyline(){
-        if (pathPoints.isNotEmpty() && pathPoints.size>1){
+        if (pathPoints.isNotEmpty() && pathPoints.last().size>1){
             val preLastLatLng=pathPoints.last()[pathPoints.last().size-2]
             val lastLatLng=pathPoints.last().last()
 
@@ -138,6 +152,7 @@ class TrackingFragment : Fragment() {
                 .add(lastLatLng)
 
             map?.addPolyline(polylineOptions)
+
         }
     }
 

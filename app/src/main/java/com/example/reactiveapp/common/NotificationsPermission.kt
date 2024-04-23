@@ -32,7 +32,7 @@ object NotificationsPermission {
                     binding,
                     String.format(
                         String.format(
-                            "فعل النوتفكيشن عشان تقدر تشغل التلاوات",
+                            "فعل النوتفكيشن",
                             context.getString(R.string.app_name)
                         )
                     ),

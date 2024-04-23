@@ -96,7 +96,7 @@ class RunFragment : Fragment(), EasyPermissions.PermissionCallbacks {
                 this,
                 "You need to accept location permissions to use this app.",
                  REQUEST_CODE_LOCATION_PERMISSION,
-               *perms
+               *perms.sliceArray(0 until 3)
 
                )
 
@@ -108,6 +108,7 @@ class RunFragment : Fragment(), EasyPermissions.PermissionCallbacks {
     override fun onPermissionsDenied(requestCode: Int, perms: List<String>) {
         if(EasyPermissions.somePermissionPermanentlyDenied(this, perms)) {
             Log.e(Tag,"OnPermissionDenied")
+
             SettingsDialog.Builder(requireContext()).build().show()
         } else {
             requestPermissions()
