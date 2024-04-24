@@ -10,15 +10,20 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.AdapterView
 import android.widget.Toast
 import androidx.activity.result.ActivityResultLauncher
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.fragment.app.viewModels
+import androidx.lifecycle.Observer
 import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.reactiveapp.R
+import com.example.reactiveapp.adapters.RunAdapter
 import com.example.reactiveapp.common.Constants.REQUEST_CODE_LOCATION_PERMISSION
 import com.example.reactiveapp.common.NotificationsPermission
+import com.example.reactiveapp.common.SortType
 import com.example.reactiveapp.common.TrackingUtility
 import com.example.reactiveapp.databinding.FragmentRunBinding
 import com.example.reactiveapp.ui.viewModels.MainViewModel
@@ -37,7 +42,9 @@ class RunFragment : Fragment(), EasyPermissions.PermissionCallbacks {
 
     private val Tag: String="CasePermission"
     private val mainViewModel:MainViewModel by viewModels()
-     lateinit var binding:FragmentRunBinding
+    private lateinit var binding:FragmentRunBinding
+
+     lateinit var runAdapter:RunAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -45,11 +52,41 @@ class RunFragment : Fragment(), EasyPermissions.PermissionCallbacks {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+
+        when(mainViewModel.sortType) {
+            SortType.DATE -> binding.spFilter.setSelection(0)
+            SortType.RUNNING_TIME -> binding.spFilter.setSelection(1)
+            SortType.DISTANCE -> binding.spFilter.setSelection(2)
+            SortType.AVG_SPEED -> binding.spFilter.setSelection(3)
+            SortType.CALORIES_BURNED -> binding.spFilter.setSelection(4)
+        }
+
+        binding.spFilter.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
+            override fun onNothingSelected(p0: AdapterView<*>?) {}
+
+            override fun onItemSelected(adapterView: AdapterView<*>?, view: View?, pos: Int, id: Long) {
+                when(pos) {
+                    0 -> mainViewModel.sortRuns(SortType.DATE)
+                    1 -> mainViewModel.sortRuns(SortType.RUNNING_TIME)
+                    2 -> mainViewModel.sortRuns(SortType.DISTANCE)
+                    3 -> mainViewModel.sortRuns(SortType.AVG_SPEED)
+                    4 -> mainViewModel.sortRuns(SortType.CALORIES_BURNED)
+                }
+            }
+        }
+
+
+        mainViewModel.runs.observe(viewLifecycleOwner, Observer {
+            runAdapter.submitList(it)
+        })
+
     }
 
     override fun onStart() {
         super.onStart()
         requestPermissions()
+        setupRecyclerView()
     }
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -65,6 +102,14 @@ class RunFragment : Fragment(), EasyPermissions.PermissionCallbacks {
 
         return binding.root
     }
+
+
+    private fun setupRecyclerView() = binding.rvRuns.apply {
+        runAdapter = RunAdapter()
+        adapter = runAdapter
+        layoutManager = LinearLayoutManager(requireContext())
+    }
+
 
     private fun requestPermissions() {
         if(TrackingUtility.hasLocationPermissions(requireActivity())) {

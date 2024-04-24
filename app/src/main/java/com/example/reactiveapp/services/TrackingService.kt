@@ -56,6 +56,8 @@ typealias Polylines=MutableList<Polyline>
 class TrackingService: LifecycleService(){
 
     var isFirstRun=true
+    var serviceKilled = false
+
 
     @Inject
     lateinit var fusedLocationProviderClient: FusedLocationProviderClient
@@ -95,12 +97,21 @@ class TrackingService: LifecycleService(){
         })
     }
 
+
+    private fun killService() {
+        serviceKilled = true
+        isFirstRun = true
+        pauseService()
+        postInitialValue()
+        stopForeground(true)
+        stopSelf()
+    }
+
     @RequiresApi(Build.VERSION_CODES.Q)
     override fun onStartCommand(intent: Intent?, flags: Int, startId: Int): Int {
         intent?.let {
             when(it.action){
                 ACTION_START_OR_RESUME_SERVICE-> {
-
                     if (isFirstRun){
                         Timber.d("Running service...")
 
@@ -111,10 +122,14 @@ class TrackingService: LifecycleService(){
                         Timber.d("Resuming service...")
                         startTimer()
                     }
-
                 }
+
                 ACTION_PAUSE_SERVICE-> pauseService()
-                ACTION_STOP_SERVICE-> Timber.d("stop service")
+
+                ACTION_STOP_SERVICE-> {
+                    Timber.d("stop service")
+                    killService()
+                }
             }
         }
         return super.onStartCommand(intent, flags, startId)
@@ -129,7 +144,7 @@ class TrackingService: LifecycleService(){
                     for (location in locations){
                         addPathPoint(location)
                         Timber.d("new Location, ${location.latitude} ${location.longitude}")
-                        Toast.makeText(this@TrackingService,"${location.latitude} ${location.longitude}",Toast.LENGTH_SHORT).show()
+                       // Toast.makeText(this@TrackingService,"${location.latitude} ${location.longitude}",Toast.LENGTH_SHORT).show()
                     }
                 }
             }
@@ -188,9 +203,14 @@ class TrackingService: LifecycleService(){
             isAccessible = true
             set(curNotificationBuilder, ArrayList<NotificationCompat.Action>())
         }
-        curNotificationBuilder = baseNotificationBuilder
-            .addAction(R.drawable.ic_airplanemode, notificationActionText, pendingIntent)
-        notificationManager.notify(NOTIFICATION_ID, curNotificationBuilder.build())
+
+        if (!serviceKilled){
+            curNotificationBuilder = baseNotificationBuilder
+                .addAction(R.drawable.ic_airplanemode, notificationActionText, pendingIntent)
+            notificationManager.notify(NOTIFICATION_ID, curNotificationBuilder.build())
+        }
+
+
     }
 
     @SuppressLint("MissingPermission")
@@ -258,9 +278,12 @@ class TrackingService: LifecycleService(){
         startForeground(NOTIFICATION_ID,baseNotificationBuilder.build(),FOREGROUND_SERVICE_TYPE_LOCATION)
 
         timeRunInSeconds.observe(this, Observer {
-            val notification = curNotificationBuilder
-                .setContentText(TrackingUtility.getFormattedStopWatchTime(it * 1000L))
-            notificationManager.notify(NOTIFICATION_ID, notification.build())
+            if (!serviceKilled){
+                val notification = curNotificationBuilder
+                    .setContentText(TrackingUtility.getFormattedStopWatchTime(it * 1000L))
+                notificationManager.notify(NOTIFICATION_ID, notification.build())
+            }
+
         })
     }
 

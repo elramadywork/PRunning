@@ -11,16 +11,16 @@ class MainRepository @Inject constructor(val runDao:DaoRun) {
 
 
 
-    suspend fun getAllRunsSortedByDate()=runDao.getAllRunSortedByDate()
-    suspend fun getAllRunsBySortedDistance()=runDao.getAllRunSortedByDistance()
-    suspend fun getAllRunsBySortedTimeInMills()=runDao.getAllRunSortedByTimeInMills()
-    suspend fun getAllRunsBySortedByAvgSpeed()=runDao.getAllRunSortedByAvgSpeed()
-    suspend fun getAllRunsBySortedByCaloriesBurned()=runDao.getAllRunSortedByCaloriesBurned()
+     fun getAllRunsSortedByDate()=runDao.getAllRunSortedByDate()
+     fun getAllRunsBySortedDistance()=runDao.getAllRunSortedByDistance()
+     fun getAllRunsBySortedTimeInMills()=runDao.getAllRunSortedByTimeInMills()
+     fun getAllRunsBySortedByAvgSpeed()=runDao.getAllRunSortedByAvgSpeed()
+     fun getAllRunsBySortedByCaloriesBurned()=runDao.getAllRunSortedByCaloriesBurned()
 
-    suspend fun getTotalAvgSpeed()=runDao.getTotalAvgSpeed()
-    suspend fun getTotalDistance()=runDao.getTotalDistance()
-    suspend fun getTotalACaloriesBurned()=runDao.getTotalCaloriesBurned()
-    suspend fun getTotalTimeInMills()=runDao.getTotalTimeInMills()
+     fun getTotalAvgSpeed()=runDao.getTotalAvgSpeed()
+     fun getTotalDistance()=runDao.getTotalDistance()
+     fun getTotalACaloriesBurned()=runDao.getTotalCaloriesBurned()
+     fun getTotalTimeInMills()=runDao.getTotalTimeInMills()
 
 
 }
