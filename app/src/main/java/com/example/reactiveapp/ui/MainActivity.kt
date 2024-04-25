@@ -16,6 +16,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.findNavController
+import androidx.navigation.fragment.findNavController
 import androidx.navigation.ui.setupWithNavController
 import com.example.reactiveapp.R
 import com.example.reactiveapp.common.Constants.ACTION_SHOW_TRACKING_FRAGMENT
@@ -63,6 +64,7 @@ class MainActivity : AppCompatActivity() {
         navigateToTrackingFragmentIfNeeded(intent)
 
         binding.btnMain.setupWithNavController(findNavController(R.id.fragment_nav_host))
+        binding.btnMain.setOnItemReselectedListener { /* nothing actions */ }
 
         findNavController(R.id.fragment_nav_host).addOnDestinationChangedListener{_,destination,_->
 
