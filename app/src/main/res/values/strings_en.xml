@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+        <string name="app_name">بلس ١٠</string>
+        <string name="hello_blank_fragment" translatable="false">مرحبًا بالحاوي الفارغ</string>
+        <string name="senior_app" translatable="false">تطبيق الكبار</string>
+        <string name="quick_service_in_real_time" translatable="false">خدمة سريعة في الوقت الحقيقي</string>
+        <string name="next">التالي</string>
+        <string name="are_you_looking_for_a_consultant_or_a_customer" translatable="false">هل تبحث عن مستشار أم عميل؟</string>
+        <string name="i_m_consultant" translatable="false">أنا مستشار</string>
+        <string name="your_professional_expertise_deserves_to_be_shared" translatable="false">خبرتك المهنية تستحق النشر</string>
+        <string name="join_us" translatable="false">انضم إلينا</string>
+        <string name="i_m_client" translatable="false">أنا عميل</string>
+        <string name="heigher" translatable="false">توظيف</string>
+        <string name="login" translatable="false">تسجيل الدخول</string>
+        <string name="full_name" translatable="false">الاسم الكامل</string>
+        <string name="enter_your_full_name" translatable="false">أدخل اسمك الكامل</string>
+        <string name="phone_number" translatable="false">رقم الهاتف</string>
+        <string name="choose_country" translatable="false">اختر البلد</string>
+        <string name="enter_mobile_number" translatable="false">أدخل رقم الهاتف المحمول</string>
+        <string name="password" translatable="false">كلمة المرور</string>
+        <string name="create_your_password" translatable="false">أدخل كلمة المرور الخاصة بك</string>
+        <string name="sign_up" translatable="false">سجل</string>
+        <string name="e_mail_address" translatable="false">البريد الإلكتروني</string>
+        <string name="email_phone" translatable="false">عنوان البريد الإلكتروني ورقم الهاتف</string>
+        <string name="enter_your_e_mail" translatable="false">أدخل بريدك الإلكتروني</string>
+        <string name="forgot_password" translatable="false">هل نسيت كلمة المرور؟</string>
+        <string name="get_start" translatable="false">ابدأ</string>
+        <string name="verification" translatable="false">التحقق</string>
+        <string name="enter_your_verific" translatable="false">أدخل رمز التحقق الذي أرسلناه لك من خلال بريدك الإلكتروني أو رقم الهاتف.</string>
+        <string name="verify" translatable="false">تحقق</string>
+        <string name="something_went_wrong" translatable="false">حدث خطأ ما في استدعاء الـ API</string>
+        <string name="something_went_wrong_unauth" translatable="false">حدث خطأ ما UNAUTHENTICATED</string>
+        <string name="something_went_wrong_nointernet" translatable="false">حدث خطأ ما UNAUTHENTICATED</string>
+        <string name="something_went_wrong_no_active" translatable="false">حدث خطأ ما لا يوجد نشط</string>
+        <string name="something_went_wrong_other" translatable="false">حدث خطأ آخر</string>
+
+
+    <string name="choose_your_country" translatable="false">اختر بلدك</string>
+    <string name="payment_information" translatable="false">معلومات الدفع</string>
+    <string name="name_length_should_less_than_3_characters" translatable="false">يجب ألا يقل طول الاسم عن ٣ أحرف</string>
+    <string name="choose_a_country" translatable="false">اختر بلدًا</string>
+    <string name="enter_correct_phone" translatable="false">أدخل رقم هاتف صحيح</string>
+    <string name="password_is_short" translatable="false">كلمة المرور قصيرة جدًا</string>
+    <string name="invalid_email" translatable="false">بريد إلكتروني غير صالح</string>
+    <string name="what_are_you_looking_for" translatable="false">ما الذي تبحث عنه؟</string>
+    <string name="choose_2_4_intersting_categories_to" translatable="false">اختر ١-٤ فئات مثيرة للاهتمام لترشيح الاستشاريين المناسبين لك</string>
+    <string name="confirm" translatable="false">تأكيد</string>
+    <string name="welcome_back" translatable="false">مرحبًا مجددًا،</string>
+    <string name="intersted_categories" translatable="false">فئات مثيرة للاهتمام</string>
+    <string name="prime_categories" translatable="false">الفئات الرئيسية</string>
+    <string name="all_categories" translatable="false">جميع الفئات</string>
+    <string name="meet_experts" translatable="false">تعرف على الخبراء</string>
+    <string name="experts_consultants" translatable="false">مستشارون خبراء</string>
+    <string name="experts_advisors" translatable="false">مستشارون متخصصون</string>
+    <string name="show_all" translatable="false">عرض الكل</string>
+    <string name="sample" translatable="false">وردبريس، مطورو الويب CMS، تطوير التجارة الإلكترونية. تطوير التجارة الإلكترونية تطوير التجارة الإلكترونية</string>
+    <string name="avaliable_consultant" translatable="false">مستشارون متخصصون</string>
+    <string name="tv_attachments" translatable="false">المرفقات</string>
+    <string name="watching_video" translatable="false">مشاهدة الفيديو</string>
+    <string name="tv_choose_media" translatable="false">اختر نوع الوسائط التي ترغب في إرسالها</string>
+    <string name="top_companies" translatable="false">أفضل الشركات</string>
+    <string name="prestigious_portfolio" translatable="false">م portefeuille réputé</string>
+    <string name="the_latest_consultantions" translatable="false">أحدث الاستشارات</string>
+    <string name="rate" translatable="false">تقييم:</string>
+    <string name="home" translatable="false">الصفحة الرئيسية</string>
+    <string name="position_title_not_empty" translatable="false">يجب ألا يكون عنوان الوظيفة فارغًا</string>
+    <string name="project_name_not_empty" translatable="false">يجب ألا يكون اسم المشروع فارغًا</string>
+    <string name="date_from_not_empty" translatable="false">يجب ألا يكون تاريخ البدء فارغًا</string>
+
+
+    <string name="date_to_not_empty" translatable="false">يجب ألا يكون تاريخ الانتهاء فارغًا</string>
+    <string name="url_not_empty" translatable="false">يجب ألا يكون عنوان URL فارغًا</string>
+    <string name="details_not_empty" translatable="false">يجب ألا تكون التفاصيل فارغة</string>
+    <string name="responsibility_not_empty" translatable="false">يجب ألا تكون المسؤولية فارغة</string>
+    <string name="no_of_projects_" translatable="false">عدد المشاريع: %d</string>
+    <string name="no_of_experience" translatable="false">عدد الخبرة: %d سنوات</string>
+    <string name="insights" translatable="false">رؤى</string>
+    <string name="strategic_perspective" translatable="false">منظور استراتيجي</string>
+    <string name="_hours" translatable="false">%d ساعة</string>
+    <string name="_day" translatable="false">%s أيام</string>
+    <string name="_usd" translatable="false">%s دولار أمريكي</string>
+    <string name="profile" translatable="false">الملف الشخصي</string>
+    <string name="change_mobile" translatable="false">تغيير الهاتف المحمول</string>
+    <string name="change_email" translatable="false">تغيير البريد الإلكتروني</string>
+    <string name="change_password" translatable="false">تغيير كلمة المرور</string>
+    <string name="logout" translatable="false">تسجيل الخروج</string>
+    <string name="add_consultations" translatable="false">إضافة استشارات</string>
+    <string name="position_title" translatable="false">عنوان الوظيفة *</string>
+    <string name="expected_delivery_days">التسليم المتوقع | الأيام</string>
+    <string name="categories">الفئات</string>
+    <string name="consultation_details">تفاصيل الاستشارة *</string>
+    <string name="consultation_details_">تفاصيل الاستشارة </string>
+    <string name="details">تفاصيل</string>
+    <string name="needs">اكتب معلومات حول احتياجاتك</string>
+    <string name="select_skills">اختر المهارات *</string>
+    <string name="skills_1">المهارات ١</string>
+    <string name="skills_2">المهارات ٢</string>
+    <string name="upload_media">تحميل الوسائط *</string>
+    <string name="browse_file">تصفح الملف</string>
+    <string name="video_urls">رابط الفيديو</string>
+    <string name="add_more">+ إضافة المزيد</string>
+
+
+
+    <string name="submit">إرسال</string>
+    <string name="position_title_">عنوان الوظيفة</string>
+    <string name="video_url">رابط الفيديو</string>
+    <string name="add_skill">إضافة مهارة</string>
+    <string name="compltet_required_data">يرجى استكمال البيانات المطلوبة</string>
+    <string name="consultations">الاستشارات</string>
+    <string name="av_costs_">متوسط التكلفة :</string>
+    <string name="av_time_">متوسط الوقت :</string>
+    <string name="no_of_offers_">عدد العروض :</string>
+    <string name="browse_all_offers">تصفح جميع العروض</string>
+    <string name="add_a_skill">إضافة مهارة</string>
+    <string name="offers">العروض</string>
+    <string name="chat">الدردشة</string>
+    <string name="expected_delivery">التسليم المتوقع</string>
+    <string name="skills">المهارات</string>
+    <string name="uploaded_media">الوسائط المحملة</string>
+    <string name="offer_details">تفاصيل العرض</string>
+    <string name="consultations_offers_details">تفاصيل عروض الاستشارات</string>
+    <string name="portfolio">الم portفوليو</string>
+    <string name="prerequisite">المتطلبات الأساسية</string>
+    <string name="accept_offer">قبول العرض</string>
+    <string name="add_your_email">أضف بريدك الإلكتروني</string>
+    <string name="enter_your_e_mail_and_we">أدخل بريدك الإلكتروني وسنرسل لك رمزًا مكونًا من 4 أرقام للتحقق.</string>
+    <string name="edit_profile">تحرير الملف الشخصي</string>
+    <string name="country_">البلد *</string>
+    <string name="experience_">الخبرة *</string>
+    <string name="specializations_">التخصصات</string>
+    <string name="about_">حول *</string>
+    <string name="update">تحديث</string>
+    <string name="complete_profile">اكمال الملف الشخصي</string>
+    <string name="experience">الخبرة</string>
+    <string name="about">حول</string>
+    <string name="create_portfolio">إنشاء م portفوليو</string>
+    <string name="title">العنوان</string>
+    <string name="project_name_">اسم المشروع *</string>
+    <string name="project_name">اسم المشروع</string>
+    <string name="from">من</string>
+    <string name="date_from_">التاريخ من *</string>
+
+    <string name="to">إلى</string>
+    <string name="save_and_add_new">حفظ وإضافة جديد</string>
+    <string name="finish">انهاء</string>
+    <string name="apply_offer">تقديم العرض</string>
+    <string name="expected_delivery_time_">التسليم المتوقع *</string>
+    <string name="price_">السعر *</string>
+    <string name="price">السعر</string>
+    <string name="prerequisite_">الشروط المسبقة *</string>
+    <string name="prerequisites">الشروط المسبقة</string>
+    <string name="execution_plan_">خطة التنفيذ *</string>
+    <string name="execution_plan">خطة التنفيذ</string>
+    <string name="save">حفظ</string>
+    <string name="name_must_be_not_empty">يجب ألا يكون اسمك فارغًا!</string>
+    <string name="created_at">تم الإنشاء في</string>
+    <string name="code">الكود</string>
+    <string name="pending">قيد الانتظار</string>
+    <string name="inprocess">قيد التنفيذ</string>
+    <string name="approved">تمت الموافقة عليه</string>
+    <string name="cancelled">تم الإلغاء</string>
+    <string name="completed">تم الاكتمال</string>
+    <string name="confirmed">تم التأكيد</string>
+    <string name="offer_title">عنوان العرض</string>
+    <string name="delivery_day">يوم التسليم</string>
+    <string name="costs">التكاليف</string>
+    <string name="select_date">اختر التاريخ</string>
+    <string name="portfolio_uploaded_success">تم تحميل الم portفوليو بنجاح</string>
+    <string name="description">الوصف</string>
+    <string name="description_">الوصف*</string>
+    <string name="responsibility">المسؤولية</string>
+    <string name="responsibility_">المسؤولية*</string>
+    <string name="some_went_wrong">حدث خطأ ما</string>
+
+
+
+
+    <string name="try_again">حاول مرة أخرى</string>
+    <string name="check_internet_connection">تحقق من اتصال الإنترنت</string>
+    <string name="new_">جديد</string>
+    <string name="closed">مغلق</string>
+    <string name="code_">الكود :</string>
+    <string name="time">الوقت :</string>
+    <string name="in_progress_consultations_details">تفاصيل الاستشارات قيد التقدم</string>
+    <string name="started_date_">تاريخ البدء :</string>
+    <string name="end_date">تاريخ الانتهاء :</string>
+    <string name="close_consultation">إغلاق الاستشارة</string>
+    <string name="report_consultation">تقديم تقرير بالاستشارة</string>
+    <string name="comments">التعليقات</string>
+    <string name="deliverables_">التسليمات *</string>
+    <string name="deliverables">التسليمات</string>
+    <string name="title_">العنوان *</string>
+    <string name="comment">التعليق</string>
+    <string name="comment_">التعليق *</string>
+    <string name="comment_added_success">تمت إضافة التعليق بنجاح</string>
+    <string name="deliverable_is_required">التسليمة مطلوبة</string>
+    <string name="deliverable_is_success">تم التسليم بنجاح</string>
+    <string name="please_select_image">يرجى تحديد صورة</string>
+    <string name="title_must_be_gerea">يجب أن يكون العنوان أكثر من 10 أحرف</string>
+    <string name="comment_must_be_gerea">يجب أن يكون التعليق أكثر من 10 أحرف</string>
+    <string name="you_must_choose_categories">يجب عليك اختيار فئات</string>
+    <string name="you_must_choose_spec">يجب عليك اختيار التخصصات</string>
+    <string name="comment_is_required">التعليق مطلوب</string>
+    <string name="title_is_required">العنوان مطلوب</string>
+    <string name="type_">النوع *</string>
+    <string name="report_type">نوع التقرير</string>
+    <string name="report_type_">نوع التقرير *</string>
+    <string name="message_">الرسالة *</string>
+    <string name="message">الرسالة</string>
+
+
+
+
+    <string name="send">إرسال</string>
+    <string name="report_details">تفاصيل التقرير</string>
+    <string name="in_progress_consultation_">استشارة قيد التقدم:</string>
+    <string name="for_">لـ:</string>
+    <string name="message_2">رسالة:</string>
+    <string name="answer_">الجواب:</string>
+    <string name="created_at_">تم الإنشاء في:</string>
+    <string name="all">الكل</string>
+    <string name="your_insights">تحليلاتك</string>
+    <string name="create">إنشاء</string>
+    <string name="featured_insights">تحليلات مميزة</string>
+    <string name="more">المزيد</string>
+    <string name="see_more">رؤية المزيد</string>
+    <string name="all_insights">كل التحليلات</string>
+    <string name="add">إضافة</string>
+    <string name="in_progress">قيد التقدم</string>
+    <string name="reports">التقارير</string>
+    <string name="create_a_profile">إنشاء ملف شخصي</string>
+    <string name="consultation_title">عنوان الاستشارة</string>
+    <string name="consultation_title_">عنوان الاستشارة *</string>
+    <string name="chat_now">الدردشة الآن</string>
+    <string name="assign">تعيين</string>
+    <string name="a_consultant_can_easily">يمكن للمستشار نقل المعرفة والمهارات إليك بسهولة.</string>
+    <string name="av_cost_">التكلفة المتوسطة:</string>
+    <string name="av_timee_">الوقت المتوسط:</string>
+    <string name="no_of_offers">عدد العروض:</string>
+    <string name="no_offers_available">لا توجد عروض متاحة حالياً</string>
+    <string name="status_">الحالة:</string>
+    <string name="start_date_">تاريخ البدء:</string>
+    <string name="remaining_time_">الوقت المتبقي:</string>
+    <string name="cost_">التكلفة:</string>
+    <string name="reason_">السبب:</string>
+    <string name="canceled_by_consultant">تم الإلغاء من قبل المستشار</string>
+    <string name="view_offers">عرض العروض</string>
+    <string name="end_date_">تاريخ الانتهاء:</string>
+    <string name="publish_date_">تاريخ النشر:</string>
+    <string name="cancelled_date">تاريخ الإلغاء:</string>
+    <string name="projects_n">المشاريع: %d</string>
+    <string name="experience_n_years">الخبرة: %d سنة</string>
+    <string name="_n_comments">%d تعليقات</string>
+    <string name="my_account">حسابي</string>
+    <string name="terms_conditions">الشروط والأحكام</string>
+    <string name="language">اللغة</string>
+    <string name="help">المساعدة</string>
+    <string name="e_mail">البريد الإلكتروني</string>
+    <string name="consultations_">الاستشارات:</string>
+    <string name="decline_offer">رفض العرض</string>
+    <string name="high_rated">ذو تقييم عالي</string>
+    <string name="time_">الوقت</string>
+    <string name="languages">اللغات</string>
+    <string name="suggested">مقترح</string>
+    <string name="english_us">الإنجليزية (الولايات المتحدة)</string>
+    <string name="english_uk">الإنجليزية (المملكة المتحدة)</string>
+    <string name="french">الفرنسية</string>
+    <string name="spanish">الإسبانية</string>
+    <string name="arabic">العربية</string>
+    <string name="russian">الروسية</string>
+    <string name="indonesia">الإندونيسية</string>
+    <string name="hindi">الهندية</string>
+    <string name="help_center">مركز المساعدة</string>
+    <string name="faq">الأسئلة الشائعة</string>
+    <string name="contact_us">اتصل بنا</string>
+    <string name="costumer_services">خدمة العملاء</string>
+    <string name="facebook">فيسبوك</string>
+    <string name="there_is_no_reports">لا توجد تقارير حتى الآن</string>
+    <string name="no_completed_projects">لا توجد مشاريع مكتملة حتى الآن</string>
+    <string name="old_password">كلمة المرور القديمة</string>
+    <string name="no_thing_inprogress">عذراً، لا يوجد شيء قيد التقدم حتى الآن</string>
+    <string name="there_is_no_projects">لا توجد مشاريع قيد التنفيذ</string>
+    <string name="oops_no_projects">عذرًا، لم يتم إضافة أي مشاريع بعد في</string>
+    <string name="oops_no_projects_cancelled">عذرًا، لم يتم إلغاء أي مشاريع بعد في</string>
+    <string name="oops_no_projects_compeleted">عذرًا، لم يتم إكمال أي مشاريع بعد</string>
+    <string name="no_new_consultation">لا توجد استشارات جديدة</string>
+    <string name="website">الموقع الإلكتروني</string>
+    <string name="offer_accepted">تم قبول العرض</string>
+    <string name="offer_declined">تم رفض العرض</string>
+    <string name="no_low_price">لا توجد أسعار منخفضة متاحة</string>
+    <string name="no_time_price">لا توجد أسعار بالوقت المتاحة</string>
+    <string name="no_high_rated">لا توجد تقييمات عالية متاحة</string>
+    <string name="confirmed_by_consultant">تم تأكيد من قبل المستشار</string>
+    <string name="usd">دولار</string>
+    <string name="insight_type">نوع التحليل</string>
+    <string name="category_">الفئة *</string>
+    <string name="category">الفئة</string>
+    <string name="insight_title">عنوان التحليل</string>
+    <string name="title_en">العنوان (بالإنجليزية) *</string>
+    <string name="title_ar">العنوان (بالعربية) *</string>
+    <string name="description_en">الوصف (بالإنجليزية) *</string>
+    <string name="description_ar">الوصف (بالعربية) *</string>
+    <string name="upload_photo_">تحميل الصورة *</string>
+    <string name="upload_cover_">تحميل الغلاف *</string>
+    <string name="please_fill">يرجى ملء جميع الحقول</string>
+    <string name="insight_details">تفاصيل التحليل</string>
+    <string name="is_approved">تم الموافقة عليه:</string>
+    <string name="cover">الغلاف</string>
+    <string name="photos">الصور</string>
+    <string name="account_type">نوع الحساب</string>
+    <string name="join_as_a_consultant_or_client">الانضمام كمستشار أو عميل؟</string>
+    <string name="specializations">التخصصات</string>
+    <string name="project_link">رابط المشروع</string>
+    <string name="explain_your_plan_for_executing_project">شرح خطتك لتنفيذ المشروع</string>
+    <string name="basic_informations">المعلومات الأساسية</string>
+    <string name="project_description">وصف المشروع</string>
+    <string name="required_skills">المهارات المطلوبة</string>
+    <string name="project_url">رابط المشروع</string>
+    <string name="delivery_time">وقت التسليم</string>
+    <string name="lowest_price">أقل سعر</string>
+    <string name="consultations_details">تفاصيل الاستشارات</string>
+    <string name="report">التقرير</string>
+    <string name="list_deliverables">قائمة التسليمات</string>
+    <string name="show_comments">عرض التعليقات</string>
+    <string name="choose_a_type_of_message">اختر نوع الرسالة</string>
+    <string name="enter_your_comment">أدخل تعليقك</string>
+    <string name="projects">المشاريع</string>
+    <string name="add_identity">إضافة هوية</string>
+    <string name="add_bank_account">إضافة حساب بنكي</string>
+    <string name="uploaded_media_should_be_image_or_document">يجب أن يكون الوسائط المرفوعة صورة أو مستند</string>
+    <string name="uploaded_media_should_be_pdf">يجب أن يكون الملف المرفوع PDF</string>
+    <string name="uploaded_media_should_be_image">يجب أن يكون الملف المرفوع صورة</string>
+    <string name="bank_letter_account">خطاب الحساب البنكي *</string>
+    <string name="bank_account_visa">حساب البنك (VISA) *</string>
+    <string name="enter_your_bank_account">أدخل حسابك البنكي</string>
+    <string name="enter_your_bank_name">أدخل اسم بنكك</string>
+    <string name="bank_name">اسم البنك *</string>
+    <string name="person_name">اسم الشخص *</string>
+    <string name="bank_branch_name">اسم فرع البنك *</string>
+    <string name="enter_your_bank_person_name">أدخل اسم الشخص في البنك</string>
+    <string name="enter_your_bank_branch_name">أدخل اسم فرع البنك</string>
+    <string name="enter_your_bank_branch_number">أدخل رقم فرع البنك</string>
+    <string name="bank_branch_number">رقم فرع البنك *</string>
+    <string name="you_should_add_identity">يجب عليك إضافة هوية</string>
+    <string name="account_letter_is_requierd">خطاب الحساب مطلوب</string>
+    <string name="there_are_no_consultations">لا توجد استشارات</string>
+    <string name="forget_password">نسيت كلمة المرور</string>
+    <string name="enter_your_phone_number_to_receive_a_password_reset_verification_code">أدخل رقم هاتفك لتلقي رمز التحقق لإعادة تعيين كلمة المرور</string>
+    <string name="country">البلد</string>
+    <string name="continuee">استمرار</string>
+    <string name="enter_your_verification_code_that_we_sent_you_through_your_mobile">أدخل رمز التحقق الذي أرسلناه إليك عبر الهاتف المحمول الخاص بك.</string>
+    <string name="confirm_new_password">تأكيد كلمة المرور الجديدة</string>
+    <string name="new_password">كلمة المرور الجديدة</string>
+    <string name="submits">إرسال</string>
+    <string name="not_found">لا توجد بيانات</string>
+    <string name="consultationss">الاستشارات؟</string>
+    <string name="yes">نعم</string>
+    <string name="no">لا</string>
+    <string name="consultations_management">إدارة الاستشارات</string>
+    <string name="proceeding">جار التقدم</string>
+    <string name="cancel">إلغاء</string>
+    <string name="cancel_capital">إلغاء</string>
+    <string name="do_you_want_to_confirm">هل تريد التأكيد؟</string>
+    <string name="report_title">عنوان التقرير</string>
+    <string name="sorry_nothing_cancelled_yet">لا يوجد شيء تم إلغاؤه بعد</string>
+    <string name="offer_has_ben_sent">تم إرسال العرض</string>
+    <string name="consultation_has_been_closed">تم إغلاق الاستشارة</string>
+    <string name="inv">INV</string>
+    <string name="subtotal">المجموع الفرعي</string>
+    <string name="discount_50">خصم 50%</string>
+    <string name="total">الإجمالي</string>
+    <string name="you_have">لديك</string>
+    <string name="notifications">الإشعارات</string>
+    <string name="today">اليوم.</string>
+    <string name="my_day">اليوم</string>
+    <string name="this_weak">هذا الأسبوع</string>
+    <string name="hotest_services">أبرز الخدمات</string>
+    <string name="top_tier_services">خدمات الطبقة العليا</string>
+    <string name="elite_subscriptions">الاشتراكات المتميزة</string>
+    <string name="features">الميزات</string>
+    <string name="send_request">إرسال طلب</string>
+    <string name="there_is_no_data">لا توجد بيانات.</string>
+    <string name="there_is_no_available_consultants_found">لا توجد مستشارين متاحين.</string>
+    <string name="there_is_no_experts_found">لا توجد خبراء متاحين.</string>
+    <string name="closed_by_consultant">تم الإغلاق من قبل المستشار</string>
+    <string name="in_process">قيد التقدم</string>
+    <string name="there_is_no_comments_to_show">لا توجد تعليقات لعرضها.</string>
+    <string name="edite_phone">تم تحرير رقم الهاتف</string>
+    <string name="success_email">نجاح في تحديث معلومات البريد الإلكتروني</string>
+    <string name="upload_project">تحميل المشروع</string>
+    <string name="upload">تحميل</string>
+    <string name="add_experience">إضافة تجربة</string>
+    <string name="phone">الهاتف</string>
+    <string name="there_is_no_notifications_yet">لا توجد إشعارات بعد.</string>
+    <string name="update_your_email">تحديث البريد الإلكتروني الخاص بك</string>
+    <string name="name">الاسم.</string>
+    <string name="update_your_name">تحديث اسمك</string>
+    <string name="special_offer">عرض خاص</string>
+    <string name="yesterday">أمس</string>
+    <string name="awating_consultant_approval">في انتظار موافقة المستشار</string>
+    <string name="show_consultation_details">عرض تفاصيل الاستشارة</string>
+    <string name="tv_chat">الدردشة</string>
+    <string name="type_a_message">اكتب رسالة</string>
+    <string name="delete_account">حذف الحساب؟</string>
+    <string name="are_you_sure_want_to_delete_the_account">هل أنت متأكد من رغبتك في حذف</string>
+    <string name="the_account">الحساب</string>
+    <string name="delete_accountt">حذف الحساب</string>
+    <string name="do_you_want_to_exit">هل ترغب في الخروج؟</string>
+    <string name="no_comments_yet">لا توجد تعليقات بعد!</string>
+    <string name="no_one_has_yet_added_a_comment">لم يقم أحد بإضافة تعليق بعد</string>
+    <string name="no_deliverables">لا توجد تسليمات!</string>
+    <string name="no_deliverables_added_yet">لا تمت إضافة تسليمات بعد!</string>
+    <string name="wallet">المحفظة</string>
+    <string name="no_consultation_found">لا توجد استشارات مكتملة حتى الآن!</string>
+
+    <string name="special_offers">عروض خاصة</string>
+    <string name="eminent_offering">عروض متميزة</string>
+    <string name="vip_consultations">استشارات VIP</string>
+    <string name="oops_there_is_no_advice_here_at">عذرًا، لا يوجد نصيحة هنا في</string>
+    <string name="the_moment">الوقت الحالي</string>
+    <string name="balance">الرصيد</string>
+    <string name="first_name">الاسم الأول</string>
+    <string name="last_name">اسم العائلة</string>
+    <string name="street">الشارع</string>
+    <string name="city">المدينة</string>
+    <string name="post_code">الرمز البريدي</string>
+    <string name="let_s_find_you_a_great_talent_nto_do_your_job">لنجد لك موهبة عظيمة لتنفيذ عملك</string>
+    <string name="search_for_a_service">البحث عن خدمة</string>
+    <string name="service_category">فئة الخدمة</string>
+    <string name="works">أعمال</string>
+    <string name="sar">ريال</string>
+    <string name="call">اتصال</string>
+    <string name="meeting">اجتماع</string>
+    <string name="no_subsciption_plan">لا توجد خطط اشتراكات</string>
+    <string name="subsciption_plans">خطط الاشتراك</string>
+    <string name="call_history">سجل المكالمات</string>
+    <string name="meeting_history">سجل الاجتماعات</string>
+    <string name="upcoming">القادمة</string>
+    <string name="choose_your_desired_date_and_time">اختر التاريخ والوقت المطلوبين</string>
+    <string name="select_time">حدد الوقت</string>
+    <string name="request">طلب</string>
+    <string name="cancel_">إلغاء</string>
+    <string name="request_calling">طلب المكالمة</string>
+    <string name="call_remaining">المكالمات المتبقية</string>
+    <string name="request_meeting">طلب الاجتماع</string>
+    <string name="meeting_remaining">الاجتماعات المتبقية</string>
+    <string name="check_date">يرجى التحقق من التاريخ</string>
+    <string name="check_time">يرجى التحقق من الوقت</string>
+    <string name="sign_in">تسجيل الدخول</string>
+    <string name="first_sign_in">تسجيل الدخول لأول مرة</string>
+    <string name="company_name">اسم الشركة:</string>
+    <string name="location">الموقع:</string>
+    <string name="project_namee">اسم المشروع:</string>
+    <string name="time_frame">الإطار الزمني:</string>
+    <string name="attaches">المرفقات:</string>
+    <string name="project_details">تفاصيل المشروع</string>
+    <string name="project_challenges">تحديات المشروع</string>
+    <string name="images">الصور</string>
+    <string name="testimonials">الشهادات</string>
+    <string name="solutions">الحلول</string>
+    <string name="visit_link">زيارة الرابط</string>
+    <string name="media">الوسائط</string>
+    <string name="request_call">طلب المكالمة</string>
+</resources>
